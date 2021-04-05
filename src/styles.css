@@ -378,22 +378,18 @@ html {
     margin-right: 32px;
 }
 
-.main__title-link:first-child::after {
-    display: block;
-    content: "";
-    background-image: url("./images/repair.svg");
+.main-button-link__logo {
     width: 40px;
     height: 40px;
     margin-left: 8px;
 }
 
-.main__title-link:last-child::after {
-    display: block;
-    content: "";
+.main-button-link__logo--check {
     background-image: url("./images/checkstatus.svg");
-    width: 40px;
-    height: 40px;
-    margin-left: 8px;
+}
+
+.main-button-link__logo--repair {
+    background-image: url("./images/repair.svg");
 }
 
 .main__buttons-wrap {
