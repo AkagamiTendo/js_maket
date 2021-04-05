@@ -28,7 +28,11 @@ html {
 }
 
 .body {
-    background-color: #F8F8F8;
+    background-color: #FFFFFF;
+}
+
+.page-layout {
+    max-width: 1120px;
 }
 
 .header {
@@ -84,7 +88,7 @@ html {
     }
 }
 
-.header__logo {
+.button-link__logo {
     width: 40px;
     height: 40px;
     border: none;
@@ -104,42 +108,42 @@ html {
     }
 }
 
-.header__logo--burger {
+.button-link__logo--burger {
     background-image: url("./images/burger.svg");
 }
 
-.header__logo--call {
+.button-link__logo--call {
     background-image: url("./images/call.svg");
     display: none;
 }
 
-.header__logo--chat {
+.button-link__logo--chat {
     background-image: url("./images/chat.svg");
     display: none;
 }
 
-.header__logo--profile {
+.button-link__logo--profile {
     background-image: url("./images/profile.svg");
     display: none;
 }
 
 @media (min-width: 768px) {
-    .header__logo--call,
-    .header__logo--chat,
-    .header__logo--profile {
+    .button-link__logo--call,
+    .button-link__logo--chat,
+    .button-link__logo--profile {
         display: block;
     }
 
-    .header__logo--profile {
+    .button-link__logo--profile {
         margin-right: 42px;
     }
 }
 
-.header__logo--repair {
+.button-link__logo--repair {
     background-image: url("./images/repair.svg");
 }
 
-.header__logo--check {
+.button-link__logo--check {
     background-image: url("./images/checkstatus.svg");
     margin-right: 0;
 }
@@ -179,6 +183,10 @@ html {
     background-color: #F8F8F8;
 }
 
+.page-layout__main {
+    padding-top: 24px;
+}
+
 .main__menu {
     list-style: none;
     overflow: auto;
@@ -186,6 +194,10 @@ html {
     margin-left: 16px;
     margin-top: 24px;
     margin-bottom: 24px;
+}
+
+.main__menu::-webkit-scrollbar {
+    width: 0;
 }
 
 @media (min-width: 768px) {
@@ -226,7 +238,7 @@ html {
     height: 40px;
     background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
     top: 0;
-    right: -5px;
+    right: 0;
 }
 
 .main__menu-item:first-child {
@@ -235,42 +247,42 @@ html {
     background-color: white;
 }
 
-.content__paragraph {
+.company-info__paragraph {
     font-family: TTLakes, sans-serif;
     font-size: 14px;
     line-height: 18px;
 }
 
-.content__text {
+.company-info__text {
     max-width: 312px;
     margin-left: 16px;
     margin-right: 16px;
 }
 
 @media (min-width: 768px) {
-    .content__text {
+    .company-info__text {
         margin-left: 24px;
     }
 }
 
 @media (min-width: 1120px) {
-    .content__text {
+    .company-info__text {
         margin-left: 32px;
         max-width: 490px;
     }
 }
 
-.content__paragraph:last-child {
+.company-info__paragraph:last-child {
     display: none;
 }
 
 @media (min-width: 768px) {
-    .content__paragraph:last-child {
+    .company-info__paragraph:last-child {
         display: block;
     }
 }
 
-.content__read-more {
+.company-info__read-more {
     background-color: transparent;
     border: none;
     font-family: TTLakes-Medium, sans-serif;
@@ -281,18 +293,18 @@ html {
 }
 
 @media (min-width: 768px) {
-    .content__read-more {
+    .company-info__read-more {
         margin-top: 10px;
     }
 }
 
 @media (min-width: 1120px) {
-    .content__read-more {
+    .company-info__read-more {
         margin-left: 32px;
     }
 }
 
-.content__read-more::before {
+.company-info__read-more::before {
     display: block;
     content: "";
     float: left;
@@ -303,7 +315,7 @@ html {
     height: 24px;
 }
 
-.content__image {
+.company-info__image {
     flex-grow: 1;
     max-width: 531px;
     max-height: 307px;
@@ -311,36 +323,36 @@ html {
 }
 
 @media (min-width: 768px){
-    .content__image {
+    .company-info__image {
         margin-right: 24px;
         max-width: 360px;
     }
 }
 
 @media (min-width: 1120px) {
-    .content__image {
+    .company-info__image {
         max-width: 531px;
     }
 }
 
-.content__cps-image {
+.company-info__cps-image {
     width: 100%;
 }
 
 @media (min-width: 768px) {
-    .content__cps-image {
+    .company-info__cps-image {
         border-radius: 6px;
     }
 }
 
-.content {
+.company-info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 @media (min-width: 768px) {
-    .content {
+    .company-info {
         flex-direction: row;
         flex-wrap: nowrap;
     }
@@ -349,7 +361,6 @@ html {
 .main__wrap {
     display: flex;
     justify-content: space-between;
-    margin-top: 24px;
     align-items: center;
 }
 
@@ -396,12 +407,12 @@ html {
     }
 }
 
-.content__paragraph-hidden {
+.company-info__paragraph-hidden {
     display: none;
 }
 
 @media (min-width: 1120px) {
-    .content__paragraph-hidden {
+    .company-info__paragraph-hidden {
         display: inline;
     }
 }

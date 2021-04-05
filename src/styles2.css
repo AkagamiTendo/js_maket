@@ -28,7 +28,7 @@ html {
 }
 
 .body {
-    background-color: #F8F8F8;
+    background-color: #FFFFFF;
 }
 
 .mobile-menu {
@@ -40,6 +40,10 @@ html {
     box-shadow:
             16px 0 52px 0 rgba(14, 24, 80, 0.2),
             -2px 0 4px 0 rgba(69, 79, 126, 0.02);
+}
+
+.mobile-menu::-webkit-scrollbar {
+    width: 0;
 }
 
 .mobile-menu__container {
@@ -61,19 +65,19 @@ html {
     }
 }
 
-.mobile-menu__btn {
+.mobile-button-link__btn {
     width: 40px;
     height: 40px;
     border: none;
     border-radius: 50%;
 }
 
-.mobile-menu__btn--close {
+.mobile-button-link__btn--close {
     background-image: url("./images/close.png");
     margin-right: 17px;
 }
 
-.mobile-menu__btn--search {
+.mobile-button-link__btn--search {
     background-image: url("./images/search.png");
     margin-left: auto;
 }
@@ -134,6 +138,7 @@ html {
 
 .mobile-menu__footer-buttons {
     margin-left: 16px;
+    margin-top: 32px;
 }
 
 @media (min-width: 768px) {
@@ -141,16 +146,16 @@ html {
         margin-left: 24px;
     }
 }
-.mobile-menu__btn--call {
+.mobile-button-link__btn--call {
     background-image: url("./images/call.svg");
 }
 
-.mobile-menu__btn--chat {
+.mobile-button-link__btn--chat {
     background-image: url("./images/chat.svg");
     margin-left: 16px;
 }
 
-.mobile-menu__btn--profile {
+.mobile-button-link__btn--profile {
     background-image: url("./images/profile.svg");
     margin-left: 16px;
 }

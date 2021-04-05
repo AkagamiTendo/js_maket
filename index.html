@@ -7,21 +7,22 @@
     <link rel="stylesheet" href="src/styles.css">
 </head>
 <body class="body">
+    <div class="page-layout">
     <header class="header">
-        <div class="header__wrap">
-            <button class="header__logo header__logo--burger" type="button"></button>
+        <div class="button-link header__wrap">
+            <button class="button-link__logo button-link__logo--burger" type="button"></button>
             <a href="#" class="header__cps-logo"></a>
         </div>
-        <div class="header__wrap">
-            <button class="header__logo header__logo--call" type="button"></button>
-            <button class="header__logo header__logo--chat" type="button"></button>
-            <button class="header__logo header__logo--profile" type="button"></button>
-            <button class="header__logo header__logo--repair" type="button"></button>
-            <button class="header__logo header__logo--check" type="button"></button>
+        <div class="button-link header__wrap">
+            <button class="button-link__logo button-link__logo--call" type="button"></button>
+            <button class="button-link__logo button-link__logo--chat" type="button"></button>
+            <button class="button-link__logo button-link__logo--profile" type="button"></button>
+            <button class="button-link__logo button-link__logo--repair" type="button"></button>
+            <button class="button-link__logo button-link__logo--check" type="button"></button>
         </div>
     </header>
 
-    <main class="main">
+    <main class="main page-layout__main">
         <div class="main__wrap">
             <h1 class="main__title">Услуги и сервисы</h1>
             <div class="main__buttons-wrap">
@@ -51,23 +52,24 @@
                 </li>
             </ul>
         </div>
-        <div class="main__content content">
-            <div class="content__wrap">
-                <div class="content__text">
-                    <p class="content__paragraph">
+        <div class="main__content company-info">
+            <div class="company-info__wrap">
+                <div class="company-info__text">
+                    <p class="company-info__paragraph">
                         Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
                     </p>
                     <br>
-                    <p class="content__paragraph">
-                        Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span class="content__paragraph-hidden">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span>
+                    <p class="company-info__paragraph">
+                        Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span class="company-info__paragraph-hidden">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span>
                     </p>
                 </div>
-                <button class="content__read-more" type="button">Читать далее</button>
+                <button class="company-info__read-more" type="button">Читать далее</button>
             </div>
-            <div class="content__image">
-                <img class="content__cps-image" src="src/images/main-image.jpg" alt="cps-image">
+            <div class="company-info__image">
+                <img class="company-info__cps-image" src="src/images/main-image.jpg" alt="cps-image">
             </div>
         </div>
     </main>
+    </div>
 </body>
 </html>
